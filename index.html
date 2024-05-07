@@ -4,19 +4,19 @@
     <title>My Web Page</title>
 </head>
 <body>
-    <form id="myForm" method="get" onsubmit="return submitFunction();">
     <input type="text"/>
-
-    </form>
-        
+    <button onclick="return submitFunction();" >Go</button>        
 </body>
 
-    <script>
-        function submitFunction() {
+      <input type="text" id="Url" placeholder="Enter your name">
+    <button id="btn" onclick="return openUrl();">Open Url</button>
 
-  let searchText = document.getElementById("form-search").value.trim();
 
-  window.open(searchText);
-}
-    </script>
+    <script type="text/javascript">
+        function openUrl() {
+            var url = document.getElementById('Url').value;
+            window.open(url);
+        }
+
+        </script>
 </html>
